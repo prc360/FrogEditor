@@ -1,5 +1,5 @@
-#include "headers/file_handler.h"
-#include "headers/init.h"
+#include "../headers/file_handler.h"
+#include "../headers/init.h"
 
 void writeToFile(map<int, string> cursorSentenceMap) {
 	SDL_LogInfo(0, "main: Ctrl + S");

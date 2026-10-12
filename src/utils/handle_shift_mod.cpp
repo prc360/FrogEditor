@@ -1,4 +1,4 @@
-#include "headers/handle_shift_mod.h"
+#include "../headers/handle_shift_mod.h"
 
 string handleAndAppendShiftModCharacters(string sentence, SDL_Event* pollEvent) {
 	switch (pollEvent->key.keysym.sym) {

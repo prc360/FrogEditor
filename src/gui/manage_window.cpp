@@ -1,4 +1,4 @@
-#include "headers/manage_window.h"
+#include "../headers/manage_window.h"
 
 pair<SDL_Window*, SDL_Renderer*> createWindowAndRenderer() {
 	initAll();

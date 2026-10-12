@@ -1,4 +1,4 @@
-#include "headers/init.h"
+#include "../headers/init.h"
 
 int initAll() {
 	SDL_Init(SDL_INIT_EVERYTHING);

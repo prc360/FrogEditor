@@ -1,6 +1,6 @@
-#include "headers/text_renderer.h"
-#include "headers/file_handler.h"
-#include "headers/handle_shift_mod.h"
+#include "../headers/text_renderer.h"
+#include "../headers/file_handler.h"
+#include "../headers/handle_shift_mod.h"
 
 using namespace std;
 
