@@ -1,3 +1,5 @@
+<img width="752" height="664" alt="image" src="https://github.com/user-attachments/assets/5c50994c-c8bb-4acd-b72d-304df18cdab0" />
+
 A simple, free and open-source text editor in C++11 and SDL2 GUI framework. I coded it using Visual Studio 2022 editor and managed by CMake build generator.
 
 ## Features
