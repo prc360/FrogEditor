@@ -1,5 +1,3 @@
-<img width="954" height="539" alt="image" src="https://github.com/user-attachments/assets/68f3203e-b157-495c-acf2-81064e6c5e5d" /># FrogEditor
-
 A simple, free and open-source text editor in C++11 and SDL2 GUI framework. I coded it using Visual Studio 2022 editor and managed by CMake build generator.
 
 ## Features
