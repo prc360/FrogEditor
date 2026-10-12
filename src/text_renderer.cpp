@@ -1,5 +1,6 @@
 #include "headers/text_renderer.h"
 #include "headers/file_handler.h"
+#include "headers/handle_shift_mod.h"
 
 using namespace std;
 
@@ -74,7 +75,7 @@ void updateTextOnScreen(const char* sentence, SDL_Renderer* renderer, int carria
 }
 
 bool checkForTypableCharacters(SDL_Event* pollEvent) {
-	return (pollEvent->type == SDL_KEYDOWN && !(pollEvent->key.keysym.sym == SDLK_BACKSPACE ||
+	return (pollEvent->type == SDL_KEYDOWN && pollEvent->key.repeat == 0 && !(pollEvent->key.keysym.sym == SDLK_BACKSPACE ||
 		pollEvent->key.keysym.sym == SDLK_RETURN || pollEvent->key.keysym.sym == SDLK_LSHIFT ||
 		pollEvent->key.keysym.sym == SDLK_RSHIFT));
 }
@@ -84,10 +85,9 @@ tuple<string, SDL_Renderer*, int, map<int, string>> getAndProcessKeyboardInputEv
 
 	if (checkForTypableCharacters(pollEvent)) {
 		SDL_Keymod modstate = SDL_GetModState();
-		SDL_LogInfo(0, "" + modstate);
 		if (modstate & KMOD_SHIFT) {
 			SDL_LogInfo(0, "main: shift key is pressed");
-			sentence += toupper(pollEvent->key.keysym.sym);
+			sentence = handleAndAppendShiftModCharacters(sentence, pollEvent);
 		}
 		else if (modstate & KMOD_CTRL) {
 			if (pollEvent->key.keysym.sym == 's') {
