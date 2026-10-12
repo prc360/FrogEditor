@@ -1,6 +1,8 @@
 #ignore FrogEditor folders
 FrogEditor/
 x64/
+.vs/
+out/
 
 #ignore output files
 FILE

@@ -1,7 +1,7 @@
-#include "init.h"
-#include "file_handler.h"
-#include "text_renderer.h"
-#include "manage_window.h"
+#include "headers/init.h"
+#include "headers/file_handler.h"
+#include "headers/text_renderer.h"
+#include "headers/manage_window.h"
 
 using namespace std;
 

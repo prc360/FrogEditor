@@ -1,5 +1,5 @@
-#include "text_renderer.h"
-#include "file_handler.h"
+#include "headers/text_renderer.h"
+#include "headers/file_handler.h"
 
 using namespace std;
 

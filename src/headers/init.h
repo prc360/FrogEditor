@@ -13,7 +13,7 @@
 #define WINDOW_HEIGHT 500
 
 #define FONT_SIZE 16
-#define FONT_NAME "OpenSans-Regular.ttf"
+#define FONT_NAME "fonts/OpenSans-Regular.ttf"
 #define TEXTCOLOR { 255, 255, 255 }
 
 #define START_LOG "main: Hello World! Running an application FrogEditor..."
