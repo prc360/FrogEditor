@@ -1,1 +1,11 @@
+#ignore FrogEditor folders
+FrogEditor/
+x64/
 
+#ignore output files
+FILE
+
+#ignore visual studio solution
+*.sln
+*.vcxproj
+*.vcxproj.*
